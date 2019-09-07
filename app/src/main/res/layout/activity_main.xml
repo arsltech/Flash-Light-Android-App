@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context="com.android.developer.arslan.flashlight.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/btn_switch_on"
+        android:layout_centerInParent="true"/>
+
+    <ToggleButton
+        android:id="@+id/mute"
+        android:layout_width="35dp"
+
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnSwitch"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mutee" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/mute"
+                android:layout_centerInParent="true"
+
+                android:id="@+id/btninfo"
+                android:background="@drawable/info"
+
+                />
+
+
+    <com.google.android.gms.ads.AdView
+
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2803445550954853/3449263499">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

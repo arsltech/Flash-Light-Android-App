@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.android.developer.arslan.flashlight.permission">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@color/statusBar"
+        android:id="@+id/toolbar"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="Permission Required"
+            android:textAlignment="center"
+            android:textSize="20sp"
+
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_below="@+id/toolbar"
+        android:text="Flash Light Needs to acces Camera"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="70sp"
+        />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:id="@+id/Btn_accept"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/statusBar"
+        android:text="Ok, I accept "
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

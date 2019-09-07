@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.developer.arslan.flashlight.info">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/info_logo"
+        android:layout_centerInParent="true"
+        android:id="@+id/image"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:id="@+id/textt"
+            android:text="Flash Light v1.0"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/statusBar"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textt"
+        android:text="Developed By   "
+        android:id="@+id/texttt"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+       android:layout_centerInParent="true"
+        android:textColor="@color/statusBar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttt"
+        android:text="ARSLAN ALI"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:id="@+id/textttt"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/statusBar"
+        />
+
+</RelativeLayout>
